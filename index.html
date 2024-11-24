@@ -1,138 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fax Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #f9f9f9;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fax Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
 
-    .container {
-      text-align: center;
-      width: 80%;
-      max-width: 600px;
-    }
+        .container {
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+        }
 
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
 
-    h1 .icon {
-      font-size: 1.5rem;
-    }
+        h1 .icon {
+            font-size: 1.5rem;
+        }
 
-    .subtitle {
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
+        .subtitle {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
 
-    .description {
-      font-size: 0.9rem;
-      color: #666;
-      margin-bottom: 20px;
-    }
+        .description {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
 
-    .document-list {
-      text-align: left;
-      margin-bottom: 20px;
-    }
+        .document-list {
+            text-align: left;
+            margin-bottom: 20px;
+        }
 
-    .document-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      margin-bottom: 10px;
-      background: #fff;
-    }
+        .document-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background: #fff;
+        }
 
-    .file-icon {
-      margin-right: 10px;
-    }
+        .file-icon {
+            margin-right: 10px;
+        }
 
-    .file-name {
-      flex-grow: 1;
-      margin-right: 10px;
-    }
+        .file-name {
+            flex-grow: 1;
+            margin-right: 10px;
+        }
 
-    .file-size {
-      margin-right: 10px;
-    }
+        .file-size {
+            margin-right: 10px;
+        }
 
-    .dropdown {
-      color: #888;
-    }
+        .dropdown {
+            color: #888;
+        }
 
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-    }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
 
-    .button {
-      padding: 10px 20px;
-      font-size: 0.9rem;
-      color: #fff;
-      background-color: #007bff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-transform: uppercase;
-      transition: background 0.3s ease;
-    }
+        .button {
+            padding: 10px 20px;
+            font-size: 0.9rem;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background 0.3s ease;
+            text-decoration: none;
+            /* To make the button look like a button, even if it's a link */
+            display: inline-block;
+        }
 
-    .button.view-pdf {
-      background-color: #007bff;
-    }
+        .button.view-pdf {
+            background-color: #007bff;
+        }
 
-    .button.download-pdf {
-      background-color: #004085;
-    }
+        .button.download-pdf {
+            background-color: #004085;
+        }
 
-    .button:hover {
-      background-color: #0056b3;
-    }
-  </style>
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Fax <span class="icon">📠</span></h1>
-    <p class="subtitle">Pages Available</p>
-    <p class="description">
-      You have new document(s) to retrieve. Please click the link below to access:
-    </p>
-
-    <div class="document-list">
-      <div class="document-item">
-        <span class="file-icon">📄</span>
-        <span class="file-name">100041003_SO_A155505IN_2...</span>
-        <span class="file-size">104 KB</span>
-        <span class="dropdown">▼</span>
-      </div>
-      <div class="document-item">
-        <span class="file-icon">📄</span>
-        <span class="file-name">WO-00376841.pdf</span>
-        <span class="file-size">179 KB</span>
-        <span class="dropdown">▼</span>
-      </div>
+    <div class="container">
+        <h1>Fax <span class="icon">📠</span></h1>
+        <p class="subtitle">Pages Available</p>
+        <p class="description">You have new document(s) to retrieve. Please click the link below to access:</p>
+        <div class="document-list">
+            <div class="document-item"><span class="file-icon">📄</span> <span class="file-name">100041003_SO_A155505IN_2...</span> <span class="file-size">104 KB</span> <span class="dropdown">▼</span></div>
+            <div class="document-item"><span class="file-icon">📄</span> <span class="file-name">WO-00376841.pdf</span> <span class="file-size">179 KB</span> <span class="dropdown">▼</span></div>
+        </div>
+        <div class="buttons">
+            <!-- Add your actual PDF URLs below --> <a href="http://google.com" class="button view-pdf" target="_blank" rel="noopener noreferrer">View PDF ▶</a> <a href="http://google.com" class="button download-pdf" download="">Download PDF ⬇</a></div>
     </div>
-
-    <div class="buttons">
-      <button class="button view-pdf">View PDF ▶</button>
-      <button class="button download-pdf">Download PDF ⬇</button>
-    </div>
-  </div>
 </body>
+
 </html>
